@@ -4,17 +4,33 @@
   "description": "CSS React Spinners",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint '/**/*.js'",
+    "lint:fix": "prettier-eslint '/**/*.js' --write"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aadhil96/react-ui-spinners.git"
   },
-  "keywords": ["react","ui","spinners"],
+  "keywords": [
+    "react",
+    "ui",
+    "spinners"
+  ],
   "author": "Aadhil",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/aadhil96/react-ui-spinners/issues"
   },
-  "homepage": "https://github.com/aadhil96/react-ui-spinners#readme"
+  "homepage": "https://github.com/aadhil96/react-ui-spinners#readme",
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier-eslint": "^9.0.0",
+    "prettier-eslint-cli": "^4.7.1"
+  }
 }
