@@ -8,7 +8,7 @@
     "scripts": {
         "prebuild": "rimraf dist",
         "build": " rollup -c",
-        "lint": "eslint **/*.js",
+        "lint": "eslint '**/*.{js,ts,tsx}'",
         "lint:fix": "prettier-eslint **/*.js --write",
         "storybook": "start-storybook -p 9001 -c storybook",
         "storybook:build": "build-storybook -c storybook",
