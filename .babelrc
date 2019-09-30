@@ -1,15 +1,20 @@
 {
-  "presets": [
-    [
-      "@babel/env",
-      {
-        "modules": false,
-        "targets": {
-          "browsers": "> 0.25%  , not dead",
-          "node": 8
-        }
-      }
+    "presets": [
+        [
+            "@babel/env",
+            {
+                "modules": false,
+                "targets": {
+                    "browsers": "> 0.25%  , not dead",
+                    "node": 8
+                }
+            }
+        ],
+        "@babel/react"
     ],
-    "@babel/react"
-  ]
+    "env": {
+        "test": {
+            "presets": ["@babel/env", "@babel/react"]
+        }
+    }
 }
