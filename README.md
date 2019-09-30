@@ -33,6 +33,8 @@ yarn add react-css-spinners
 
 ```js
 import { Ring } from "react-ui-spinners";
+import { Ellipsis  } from 'react-ui-spinners';
+import { Ripple  } from 'react-ui-spinners';
 ```
 
 ## Copyright
