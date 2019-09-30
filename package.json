@@ -5,6 +5,9 @@
     "main": "dist/bundle.cjs.js",
     "module": "dist/bundle.esm.js",
     "sideEffects": false,
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "prebuild": "rimraf dist",
         "build": " rollup -c",
@@ -18,7 +21,8 @@
         "test:staged": "jest --findRelatedTests",
         "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
         "predeploy": "npm run storybook:build",
-        "deploy": "gh-pages -d storybook-static"
+        "deploy": "gh-pages -d storybook-static",
+        "prepublish": "npm run build"
     },
     "husky": {
         "hooks": {
@@ -46,7 +50,7 @@
     "bugs": {
         "url": "https://github.com/aadhil96/react-ui-spinners/issues"
     },
-    "homepage": "https://github.com/aadhil96/react-ui-spinners#readme",
+    "homepage": "https://aadhil96.github.io/react-ui-spinners/",
     "devDependencies": {
         "@babel/core": "^7.6.2",
         "@babel/preset-env": "^7.6.2",
@@ -78,6 +82,7 @@
         "rollup-plugin-babel": "^4.3.3",
         "rollup-plugin-commonjs": "^10.1.0",
         "rollup-plugin-node-resolve": "^5.2.0",
+        "rollup-plugin-string": "^3.0.0",
         "rollup-plugin-terser": "^5.1.2",
         "rollup-plugin-uglify": "^6.0.3"
     },

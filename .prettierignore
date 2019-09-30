@@ -7,3 +7,5 @@ node_modules
 *.html
 
 storybook-static
+
+*.md
