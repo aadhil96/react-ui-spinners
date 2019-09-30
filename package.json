@@ -16,7 +16,7 @@
         "test:watch": "jest --watch",
         "test-coverage": "jest --coverage",
         "test:staged": "jest --findRelatedTests",
-        "test-coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
+        "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
     },
     "husky": {
         "hooks": {
