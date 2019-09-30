@@ -1,1 +1,1 @@
-import { configure } from '@storybook/addon-options'
+import '@storybook/addon-options/register'
