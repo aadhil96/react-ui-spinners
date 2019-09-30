@@ -1,12 +1,19 @@
 {
-    "name": "cdn",
-    "version": "1.0.0",
-    "private": true,
-    "main": "index.js",
-    "dependencies": {
-        "react-ui-spinners": "file:../.."
-    },
-    "devDependencies": {
-        "serve": "^11.2.0"
-    }
+  "name": "cdn",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "react-ui-spinners": "file:../.."
+  },
+  "devDependencies": {
+    "serve": "^11.2.0"
+  },
+  "description": "Minimal demo of the spinner hosted on CDN using UMD bundle",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

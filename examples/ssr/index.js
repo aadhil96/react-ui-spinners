@@ -1,14 +1,22 @@
-const { createElement } = require('react')
-const { Ring } = require('react-ui-spinners')
+const { createElement, Fragment } = require('react')
+const { Ellipsis, Ring, Ripple } = require('react-ui-spinners')
 const { renderToString } = require('react-dom/server')
 const express = require('express')
 
 const port = 3000
 const app = express()
 
-app.get('*', (req, res) => {
-  const html = renderToString(createElement(Ring))
+const html = renderToString(
+  createElement(
+    Fragment,
+    null,
+    createElement(Ellipsis),
+    createElement(Ring),
+    createElement(Ripple)
+  )
+)
 
+app.get('*', (req, res) => {
   res.send(`<!DOCTYPE html>
     <html lang="en">
         <head>

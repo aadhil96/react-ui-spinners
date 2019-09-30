@@ -1,8 +1,12 @@
 import React from 'react'
-import { Ellipsis } from 'react-ui-spinners'
+import { Ellipsis, Ring, Ripple } from 'react-ui-spinners'
 
-function App () {
-  return <Ellipsis />
-}
+const App = props => (
+  <>
+    <Ellipsis />
+    <Ring />
+    <Ripple />
+  </>
+)
 
 export default App
