@@ -16,13 +16,13 @@ See[demo](https://aadhil96.github.io/react-ui-spinners)
 ### npm
 
 ```sh
-npm i react-css-spinners
+npm i react-ui-spinners
 ```
 
 ### yarn
 
 ```sh
-yarn add react-css-spinners
+yarn add react-ui-spinners
 ```
 
 ### unpkg
